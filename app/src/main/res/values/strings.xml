@@ -1,3 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">pmdm6</string>
-</resources>
+    <string name="nombre_alumno">Yoel Sanchez Diaz</string>
+    <string name="tecla_c">C</string>
+    <string name="tecla_masmenos">±</string>
+    <string name="tecla_pct">%</string>
+    <string name="tecla_div">÷</string>
+    <string name="tecla_7">7</string>
+    <string name="tecla_8">8</string>
+    <string name="tecla_9">9</string>
+    <string name="tecla_mul">×</string>
+    <string name="tecla_4">4</string>
+    <string name="tecla_5">5</string>
+    <string name="tecla_6">6</string>
+    <string name="tecla_menos">−</string>
+    <string name="tecla_1">1</string>
+    <string name="tecla_2">2</string>
+    <string name="tecla_3">3</string>
+    <string name="tecla_mas">+</string>
+    <string name="tecla_0">0</string>
+    <string name="tecla_punto">.</string>
+    <string name="tecla_igual">=</string>
+    </resources>

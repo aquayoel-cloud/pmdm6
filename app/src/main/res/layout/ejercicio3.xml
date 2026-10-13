@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pantalla"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:gravity="center_vertical|end"
+        android:padding="16dp"
+        android:text="@string/nombre_alumno"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_c"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bmasmenos" />
+
+    <Button
+        android:id="@+id/bmasmenos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_masmenos"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_constraintStart_toEndOf="@id/bc"
+        app:layout_constraintEnd_toStartOf="@+id/bpct" />
+
+    <Button
+        android:id="@+id/bpct"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_pct"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_constraintStart_toEndOf="@id/bmasmenos"
+        app:layout_constraintEnd_toStartOf="@+id/bdiv" />
+
+    <Button
+        android:id="@+id/bdiv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_div"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_constraintStart_toEndOf="@id/bpct"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_7"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/bc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b8" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_8"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/bmasmenos"
+        app:layout_constraintStart_toEndOf="@id/b7"
+        app:layout_constraintEnd_toStartOf="@+id/b9" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_9"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/bpct"
+        app:layout_constraintStart_toEndOf="@id/b8"
+        app:layout_constraintEnd_toStartOf="@+id/bmul" />
+
+    <Button
+        android:id="@+id/bmul"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_mul"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/bdiv"
+        app:layout_constraintStart_toEndOf="@id/b9"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_4"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/b7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b5" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_5"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/b8"
+        app:layout_constraintStart_toEndOf="@id/b4"
+        app:layout_constraintEnd_toStartOf="@+id/b6" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_6"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/b9"
+        app:layout_constraintStart_toEndOf="@id/b5"
+        app:layout_constraintEnd_toStartOf="@+id/bmenos" />
+
+    <Button
+        android:id="@+id/bmenos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_menos"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/bmul"
+        app:layout_constraintStart_toEndOf="@id/b6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_1"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/b4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b2" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_2"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/b5"
+        app:layout_constraintStart_toEndOf="@id/b1"
+        app:layout_constraintEnd_toStartOf="@+id/b3" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_3"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/b6"
+        app:layout_constraintStart_toEndOf="@id/b2"
+        app:layout_constraintEnd_toStartOf="@+id/bmas" />
+
+    <Button
+        android:id="@+id/bmas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_mas"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/bmenos"
+        app:layout_constraintStart_toEndOf="@id/b3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_0"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/b1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bpunto" />
+
+    <Button
+        android:id="@+id/bpunto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_punto"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/b2"
+        app:layout_constraintStart_toEndOf="@id/b0"
+        app:layout_constraintEnd_toStartOf="@+id/bigual" />
+
+    <Button
+        android:id="@+id/bigual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/tecla_igual"
+        android:textSize="22sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toBottomOf="@id/b3"
+        app:layout_constraintStart_toEndOf="@id/bpunto"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
